@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_do_setting"
+    tools:context="todo.misapp.com.twotablesinonedb.doSetting"
+    android:background="@drawable/backgroundrepeat">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/linearsettin_bg"
+        android:paddingLeft="10dp"
+        android:id="@+id/frameLayout3">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Spinner
+                android:layout_width="108dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/spActividades"
+                android:entries="@array/actividades__arrays"
+                android:prompt="@string/actividad_prompt"
+                android:spinnerMode="dialog" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/labValor"
+                android:id="@+id/textView12"
+                android:paddingLeft="10dp" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:ems="10"
+                android:id="@+id/edImporte"
+                android:layout_weight="1"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/backgroundrepeat"
+        android:layout_marginBottom="40dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/frameLayout4"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="110dp"
+            android:layout_height="37dp"
+            android:text="@string/btnAlta"
+            android:id="@+id/button4"
+            android:layout_marginTop="4dp"
+            android:layout_gravity="left|top"
+            android:background="@drawable/btnshape"
+            android:textColor="#f2ffffff"
+            android:onClick="onClick_AddTask" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="110dp"
+            android:layout_height="37dp"
+            android:text="@string/btnBaja"
+            android:id="@+id/button6"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/btnshape"
+            android:textColor="#f2ffffff"
+            android:onClick="EleminarDoc" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="110dp"
+            android:layout_height="37dp"
+            android:text="@string/btnEditar"
+            android:id="@+id/button7"
+            android:layout_gravity="right|top"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/btnshape"
+            android:textColor="#f2ffffff"
+            android:onClick="editar" />
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/labActividades"
+        android:id="@+id/textView13"
+        android:layout_below="@+id/frameLayout3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:paddingLeft="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/labValor"
+        android:id="@+id/textView14"
+        android:layout_alignTop="@+id/textView13"
+        android:layout_alignRight="@+id/frameLayout3"
+        android:layout_alignEnd="@+id/frameLayout3"
+        android:paddingRight="15dp" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listViewActividades"
+        android:layout_below="@+id/textView13"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/frameLayout4"
+        android:contextClickable="true"
+        android:background="#efffffff" />
+
+</RelativeLayout>

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_resultado"
+    tools:context="todo.misapp.com.twotablesinonedb.Resultado"
+    android:background="@drawable/backgroundrepeat">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:weightSum="1"
+        android:id="@+id/linearLayout3">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/rActividades"
+            android:id="@+id/textView26"
+            android:layout_weight="0.51" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/rImporte"
+            android:id="@+id/textView27"
+            android:layout_weight="0.13" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/rDebe"
+            android:id="@+id/textView28"
+            android:layout_weight="0.15" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/rHaber"
+            android:id="@+id/textView29"
+            android:layout_weight="0.17" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/rSaldo"
+            android:id="@+id/textView30" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="38dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/frameLayout8">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="106dp"
+                android:layout_height="40dp"
+                android:text="@string/frmShow"
+                android:id="@+id/button9"
+                android:background="@drawable/btnshape"
+                android:layout_gravity="center_vertical"
+                android:onClick="abrirfragme" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="106dp"
+                android:layout_height="40dp"
+                android:text="@string/rbtnEstadistica"
+                android:id="@+id/button10"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/btnshape2"
+                android:onClick="piestadistico" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="106dp"
+                android:layout_height="40dp"
+                android:text="@string/rbtnCierreMes"
+                android:id="@+id/button11"
+                android:layout_gravity="right|center_vertical"
+                android:background="@drawable/btnshape"
+                android:onClick="EnProceso" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="126dp"
+                android:layout_height="wrap_content"
+                android:text="New Button"
+                android:id="@+id/button12"
+                android:layout_alignTop="@+id/frameLayout8"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="305dp"
+                android:layout_marginStart="305dp"
+                android:layout_alignBottom="@+id/frameLayout8"
+                android:layout_gravity="right|center_vertical" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linearLayout3"
+        android:layout_above="@+id/frameLayout8"
+        android:background="#ffffffff">
+
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/listViewResultado"
+            android:layout_below="@+id/linearLayout3"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <FrameLayout
+            android:layout_width="189dp"
+            android:layout_height="127dp"
+            android:layout_gravity="center"
+            android:background="#3ef2f2"
+            android:id="@+id/IdFrame"
+            android:visibility="visible">
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="31dp"
+                android:layout_height="34dp"
+                android:id="@+id/button13"
+                android:layout_gravity="right|top"
+                android:text="@string/X"
+                android:onClick="cerrarfragme" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="@string/FrmResultado"
+                android:id="@+id/textView35"
+                android:layout_gravity="center_horizontal|top" />
+
+            <TableLayout
+                android:layout_width="153dp"
+                android:layout_height="76dp"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:text="@string/frmSaldo"
+                        android:id="@+id/textView33"
+                        android:layout_gravity="center_horizontal|top" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:layout_gravity="center">
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:inputType="numberSigned"
+                        android:ems="10"
+                        android:id="@+id/SaldoResultado"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textSize="18sp" />
+                </TableRow>
+            </TableLayout>
+        </FrameLayout>
+    </FrameLayout>
+
+</RelativeLayout>

@@ -1,0 +1,130 @@
+<resources>
+    <string name="app_name">CP version 1.0</string>
+    <string name="action_settings">Settings</string>
+    <string name="btnResultado">Resultados</string>
+    <string name="btnGastos">Gastos</string>
+    <string name="btnIngresos">Ingresos</string>
+    <string name="btnSetting">Setting</string>
+    <string name="btnAyuda">Ayuda</string>
+    <string name="Title">""</string>
+    <string name="Subtitle">Personal</string>
+    <string name="title_activity_setting">Setting</string>
+    <string name="btnAlta">Agregar</string>
+    <string name="LabTitulo">Estado Financiero</string>
+    <string name="btnBaja">Eliminar</string>
+    <string name="btnEditar">(?)Editar</string>
+    <string name="LabCapital">Capital</string>
+    <string name="BtnExportXLS">XLS file</string>
+    <string name="title_activity_item">item</string>
+    <string name="LabIns">Ingresos</string>
+    <string name="LabSal">Salario</string>
+    <string name="LabOtrosIngresos">Otros</string>
+    <string name="LabGastos">Gastos</string>
+    <string name="LabRenta">Renta</string>
+    <string name="LaElectricidad">Electricidad</string>
+    <string name="LabCable">Cable-Internet</string>
+    <string name="LabInternet">Gasolina</string>
+    <string name="LabAlimento">Alimentos</string>
+    <string name="LabSegMedico">Seguro Medico</string>
+    <string name="LabSegCarro">Seguro del Carro</string>
+    <string name="LabOtros">Otros</string>
+    <string name="btnActualizar">Actualizar</string>
+       <string name="btnSalir">Salir</string>
+    <string name="title_activity_do_setting">Setting</string>
+    <string name="actividad_prompt">Selecciona una actividad</string>
+    <string-array name="actividades__arrays">
+        <item>Capital</item>
+        <item>Salario</item>
+        <item>Renta</item>
+        <item>Alimentos</item>
+        <item>Seguro Medico</item>
+        <item>Seguro del Carro</item>
+        <item>Telefono</item>
+        <item>Cable - Internet</item>
+        <item>Gasolina</item>
+    </string-array>
+
+    <string name="ingresos_prompt">Ingresos por</string>
+    <string-array name="ingresos__arrays">
+
+        <item>Salario</item>
+        <item>Overtimes </item>
+        <item>Servicios prestados</item>
+        <item>Ventas</item>
+        <item>Regalos</item>
+        <item>Creditos</item>
+        <item>Otros</item>
+
+    </string-array>
+    <string name="gastos_prompt">Otros gastos en</string>
+    <string-array name="gastos__arrays">
+
+        <item>Ropa</item>
+        <item>Calzados</item>
+        <item>Prendas</item>
+        <item>Aseo Personal</item>
+        <item>Corte de Cabello</item>
+        <item>Entretenimiento</item>
+        <item>Comida en restaurantes</item>
+        <item>Electronicos</item>
+        <item>Utiles para el hogar</item>
+        <item>Gasolina</item>
+        <item>Asesorios para el carro</item>
+        <item>Reparacion del carro</item>
+        <item>Car-wash</item>
+        <item>Regalos</item>
+        <item>Otros</item>
+
+    </string-array>
+    <string name="title_activity_itemsofactividades">itemsofactividades</string>
+    <string name="labValor">Importe </string>
+    <string name="labActividades">Actividades</string>
+    <string name="labInvisible">NoV</string>
+    <string name="title_activity_editar_setting">editarSetting</string>
+    <string name="VEditarTitle">Editar</string>
+   // Botones exploradores de la activity Editar
+    <string name="btnInicio">Inicio</string>
+    <string name="btnSiguiente">Siguiente</string>
+    <string name="btnAnterior">Anterior</string>
+    <string name="btnUltimo">Ultimo</string>
+    <string name="labIngresos">Ingresos</string>
+    <string name="btnAceptar">Aceptar</string>
+    <string name="btnCancelar">Cancelar</string>
+    <string name="title_activity_gastos">Otros Gastos</string>
+    <string name="LabDetalles">Detalles</string>
+    <string name="LabOtrosGastos">Gastos</string>
+    <string name="btnEditarGastos">Editar</string>
+    <string name="hGastos">Gastos</string>
+     <string name="hIngresos">Ingresos</string>
+    <string name="hValor">Importe</string>
+    <string name="hPicture">Image</string>
+    <string name="hAmpliar">Ampliar</string>
+    <string name="title_activity_gastos_items">GastosItems</string>
+    <string name="gastos">Small Textv</string>
+    <string name="btneliminar">Eliminar</string>
+    <string name="title_activity_editar_gastos">EditarGastos</string>
+    <string name="title_activity_ingresos">Ingresos</string>
+    <string name="LabImporte">Importe</string>
+    <string name="LabIngresos">Ingresos</string>
+    <string name="title_activity_editar_ingresos">EditarIngresos</string>
+    <string name="title_activity_resultado">Resultado</string>
+    <string name="rId">Id</string>
+    <string name="rActividades">Actividades</string>
+    <string name="rImporte">Importe</string>
+    <string name="rDebe">Debe</string>
+    <string name="rHaber">Haber</string>
+    <string name="rSaldo">Saldo</string>
+    <string name="rbtnUpdate">Update</string>
+    <string name="rbtnEstadistica">Estadistica</string>
+    <string name="rbtnCierreMes">Cierre Mes</string>
+    <string name="title_activity_item_resultado">ItemResultado</string>
+    <string name="title_activity_resulta_items">ResultaItems</string>
+    <string name="title_activity_item_resulta">itemResulta</string>
+    <string name="pie_chart">Estado de Resultado</string>
+    <string name="titleapp">Contabilidad Personal</string>
+    <string name="X">X</string>
+    <string name="FrmResultado">Resultado</string>
+    <string name="frmSaldo">Saldo</string>
+    <string name="frmValSaldo">xxx.xx</string>
+    <string name="frmShow">Mostrar</string>
+</resources>

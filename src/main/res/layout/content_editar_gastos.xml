@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_editar_gastos"
+    tools:context="todo.misapp.com.twotablesinonedb.EditarGastos"
+    android:background="@drawable/backgroundrepeat">
+
+
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:background="@drawable/boxbg"
+            android:id="@+id/frameLayout6"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|bottom">
+
+
+                    <TableLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+
+                        <TableRow
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:text="@string/hGastos"
+                                android:id="@+id/textView18"
+                                android:layout_margin="4dp"
+                                android:textColor="#edffffff"
+                                android:layout_gravity="center_vertical" />
+
+                            <EditText
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/idDescGastos"
+                                android:background="#ffffffff"
+                                android:textColor="#000000"
+                                android:layout_margin="4dp"
+                                android:onClick="cambiarActividad" />
+
+                        </TableRow>
+
+                        <TableRow android:layout_height="wrap_content"
+                            android:layout_width="101dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:text="@string/labValor"
+                                android:id="@+id/textView17"
+                                android:textColor="#edffffff"
+                                android:layout_margin="4dp"
+                                android:layout_gravity="center_vertical" />
+
+                            <EditText
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/IdEditarValor"
+                                android:textColor="#000000"
+                                android:background="#ffffffff"
+                                android:inputType="numberDecimal"
+                                android:width="50dp"
+                                android:layout_margin="4dp" />
+
+                        </TableRow>
+                        <TableRow android:layout_height="match_parent"
+                            android:layout_width="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:text="@string/LabDetalles"
+                                android:id="@+id/textView19"
+                                android:textColor="#edffffff"
+                                android:layout_margin="4dp"
+                                android:layout_gravity="center_vertical" />
+
+                            <EditText
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/idEditarDetalle"
+                                android:textColor="#000000"
+                                android:background="#ffffffff"
+                                android:inputType="textMultiLine"
+                                android:width="50dp"
+                                android:layout_margin="4dp" />
+
+                        </TableRow>
+
+                        <TableRow android:layout_height="wrap_content"
+                            android:layout_width="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textAppearance="?android:attr/textAppearanceSmall"
+                                android:text="@string/hPicture"
+                                android:id="@+id/textView20"
+                                android:textColor="#edffffff"
+                                android:layout_margin="4dp"
+                                android:layout_gravity="center" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/idFoto"
+                                android:layout_column="1" />
+
+                        </TableRow>
+
+
+                    </TableLayout>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/frameLayout6"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/frameLayout5">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="45dp"
+                android:weightSum="1">
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="64dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btnInicio"
+                    android:id="@+id/IdInicio"
+                    android:background="@drawable/btnshape2"
+                    android:onClick="inicio" />
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="64dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btnSiguiente"
+                    android:id="@+id/IdSiguiente"
+                    android:layout_gravity="left|center_vertical"
+                    android:background="@drawable/btnshape2"
+                    android:onClick="siguiente" />
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="64dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btnAnterior"
+                    android:id="@+id/IdAnterior"
+                    android:layout_gravity="center"
+                    android:background="@drawable/btnshape2"
+                    android:onClick="anterior" />
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="64dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btnUltimo"
+                    android:id="@+id/IdUltimo"
+                    android:layout_gravity="right|center_vertical"
+                    android:background="@drawable/btnshape2"
+                    android:onClick="fin" />
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/boxbg"
+            android:layout_below="@+id/frameLayout5"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="35dp">
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="110dp"
+                android:layout_height="40dp"
+                android:text="@string/hAmpliar"
+                android:id="@+id/IdBtnCancelar"
+                android:layout_gravity="right|top"
+                android:background="@drawable/btnshape"
+                android:nestedScrollingEnabled="false"
+                android:onClick="Ampliar" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="110dp"
+                android:layout_height="40dp"
+                android:text="@string/btnAceptar"
+                android:id="@+id/IdBtnAceptar"
+                android:layout_gravity="left|top"
+                android:background="@drawable/btnshape"
+                android:onClick="aceptar" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="110dp"
+                android:layout_height="40dp"
+                android:text="@string/btneliminar"
+                android:id="@+id/IdBtnEliminar"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/btnshape"
+                android:nestedScrollingEnabled="false"
+                android:onClick="EleminarRegistro" />
+
+        </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/LabGastos"
+            android:id="@+id/textView25"
+            android:layout_gravity="center"
+            android:textColor="#ffffff"
+            android:textAlignment="center"
+            android:gravity="center" />
+    </FrameLayout>
+
+</RelativeLayout>
